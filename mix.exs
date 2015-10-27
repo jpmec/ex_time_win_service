@@ -4,6 +4,9 @@ defmodule ExTimeWinService.Mixfile do
   def project do
     [app: :ex_time_win_service,
      version: "0.0.1",
+     name: 'ExTimeWinService',
+     source_url: "https://github.com/jpmec/ex_time_win_service",
+     homepage_url: "https://github.com/jpmec/ex_time_win_service",
      elixir: "~> 1.0",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
@@ -27,6 +30,9 @@ defmodule ExTimeWinService.Mixfile do
   #
   # Type `mix help deps` for more examples and options
   defp deps do
-    []
+    [{:earmark, "~> 0.1", only: :dev},
+     {:ex_doc, "~> 0.10", only: :dev},
+     {:timex, "~> 0.19.5"}
+   ]
   end
 end
