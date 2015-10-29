@@ -33,7 +33,8 @@ defmodule ExTimeWinService.Mixfile do
     [{:earmark, "~> 0.1", only: :dev},
      {:ex_doc, "~> 0.10", only: :dev},
      {:timex, "~> 0.19.5"},
-     {:exrm, "~> 0.19.9"}
+     {:exrm, "~> 0.19.9"},
+     {:rebar3_hex, "~> 1.8.1"}
    ]
   end
 end
